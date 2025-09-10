@@ -12,26 +12,38 @@
             >
             <a class="feedbook__link" href="tel:88005054140">8-800-505-41-40</a>
           </div>
-          <form class="feedbook__form">
+          <form class="feedbook__form" @submit.prevent="submitForm">
             <PInputText
               class="feedbook__input"
               placeholder="Ваше имя"
               autocompleted="off"
               required
+              v-model="name"
             />
             <PInputMask
               class="feedbook__input"
-              mask="+7 (999) 999-99-99"
-              placeholder="+7 (___) ___-__-__"
+              mask="8 (999) 999-99-99"
+              placeholder="8 (___) ___-__-__"
               autocompleted="off"
               required
+              v-model="phone"
             />
-            <PButton>Получить консультацию</PButton>
+            <p class="feedbook__policy">
+              Нажимая на кнопку, вы даёте согласие на обработку персональных
+              данных, указанных в форме обратной связи, Оператору в целях
+              коммуникации со мной.
+            </p>
+            <PButton type="submit">Получить консультацию</PButton>
+            <Transition name="fade-slide">
+              <p class="feedbook__success" v-if="isSuccess">
+                Спасибо за заявку! Мы свяжемся с вами в ближайшее время.
+              </p>
+            </Transition>
           </form>
         </div>
         <div class="feedbook__img">
           <img
-            src="/img/feedbook-img.jpg"
+            src="/img/feedbook-img.webp"
             alt="feedbook"
             class="feedbook__image"
           />
@@ -41,7 +53,14 @@
   </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { handleSubmit, name, phone, isSuccess, resetForm } = sendMail()
+
+const submitForm = async () => {
+  await handleSubmit(phone.value, name.value)
+  resetForm()
+}
+</script>
 
 <style lang="scss" scoped>
 .feedbook {
@@ -159,6 +178,45 @@
       gap: 10px;
     }
   }
+  &__policy {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Onest';
+    color: #1c4b73;
+  }
+  &__success {
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Onest';
+    color: #122e47;
+    text-align: center;
+  }
+}
+
+// Анимация появления сообщения об успехе
+.fade-slide-enter-active {
+  transition: all 0.4s ease-out;
+}
+
+.fade-slide-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.fade-slide-enter-to,
+.fade-slide-leave-from {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes grain {

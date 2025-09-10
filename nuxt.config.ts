@@ -8,7 +8,22 @@ export default defineNuxtConfig({
     '@': '../app',
     '~': '../'
   },
-  modules: ['@primevue/nuxt-module'],
+  modules: ['@primevue/nuxt-module', ['nuxt-mail', {
+    message: {
+      to: 'ceo@akrlog.ru',
+    },
+    smtp: {
+      service: 'timeweb',
+      auth: {
+        user: 'ceo@akrlog.ru',
+        pass: '$8IM;u{{hap)CB',
+      },
+      host: "smtp.timeweb.ru",
+      port: 465,
+      secure: true,
+      requireTLS: true,
+    },
+  }]],
   primevue: {
     components: {
         prefix: 'P',
