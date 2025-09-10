@@ -31,7 +31,7 @@
         </div>
         <div class="feedbook__img">
           <img
-            src="/img/feedbook-img.webp"
+            src="/img/feedbook-img.jpg"
             alt="feedbook"
             class="feedbook__image"
           />
@@ -118,15 +118,16 @@
     align-items: flex-end;
     justify-content: flex-end;
     position: relative;
-    background: linear-gradient(135deg, #122e47 0%, #1a3a5c 100%);
+    // background: linear-gradient(135deg, #122e47 0%, #1a3a5c 100%);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 20px 60px rgba(18, 46, 71, 0.2);
+    // box-shadow: 0 20px 60px rgba(18, 46, 71, 0.2);
     @media screen and (max-width: 850px) {
       border-radius: 10px;
       overflow: visible;
       position: static;
-      display: block;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -140,6 +141,7 @@
     max-width: 600px;
     object-fit: cover;
     height: auto;
+    border-radius: 20px;
     @media screen and (max-width: 850px) {
       position: static;
       transform: none;
