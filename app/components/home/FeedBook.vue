@@ -31,7 +31,7 @@
         </div>
         <div class="feedbook__img">
           <img
-            src="/img/feedbook-img.png"
+            src="/img/feedbook-img.webp"
             alt="feedbook"
             class="feedbook__image"
           />

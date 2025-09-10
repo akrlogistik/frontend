@@ -11,7 +11,7 @@
             >Получить консультацию</PButton
           >
         </div>
-        <img src="/img/home-hero.png" class="hero__img" alt="img" />
+        <img src="/img/home-hero.webp" class="hero__img" alt="img" />
       </div>
     </div>
   </section>

@@ -2,7 +2,7 @@
   <header class="header" :class="{ header__fixed: isFixed }">
     <div class="container">
       <div class="header__wrapper">
-        <img src="/img/logo.png" class="header__logo" alt="logo" />
+        <img src="/img/logo.webp" class="header__logo" alt="logo" />
         <div class="header__links">
           <a class="header__link" href="tel:88005054140">8-800-505-41-40</a>
           <a class="header__link" href="mailto:info@akrlog.ru"

@@ -3,14 +3,14 @@
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__links">
-          <img src="/img/logo.png" class="footer__logo" alt="logo" />
+          <img src="/img/logo.webp" class="footer__logo" alt="logo" />
 
           <a href="tel:88005054140" class="footer__link">8-800-505-41-40</a>
           <a href="mailto:info@akrlog.ru" class="footer__link"
             >info@akrlog.ru</a
           >
         </div>
-        <img src="/img/qr.png" class="footer__qr" alt="qr" />
+        <img src="/img/qr.webp" class="footer__qr" alt="qr" />
       </div>
     </div>
   </footer>

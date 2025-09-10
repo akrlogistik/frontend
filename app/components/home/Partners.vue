@@ -4,16 +4,16 @@
       <h2 class="partners__title">Наши парнтеры</h2>
     </div>
     <Vue3Marquee class="partners__items">
-      <img class="partners__img" src="/img/partners-1.png" alt="img" />
-      <img class="partners__img" src="/img/partners-2.jpg" alt="img" />
-      <img class="partners__img" src="/img/partners-3.png" alt="img" />
-      <img class="partners__img" src="/img/partners-4.png" alt="img" />
-      <img class="partners__img" src="/img/partners-5.png" alt="img" />
-      <img class="partners__img" src="/img/partners-6.png" alt="img" />
-      <img class="partners__img" src="/img/partners-7.png" alt="img" />
-      <img class="partners__img" src="/img/partners-8.png" alt="img" />
-      <img class="partners__img" src="/img/partners-9.png" alt="img" />
-      <img class="partners__img" src="/img/partners-10.png" alt="img" />
+      <img class="partners__img" src="/img/partners-1.webp" alt="img" />
+      <img class="partners__img" src="/img/partners-2.webp" alt="img" />
+      <img class="partners__img" src="/img/partners-3.webp" alt="img" />
+      <img class="partners__img" src="/img/partners-4.webp" alt="img" />
+      <img class="partners__img" src="/img/partners-5.webp" alt="img" />
+      <img class="partners__img" src="/img/partners-6.webp" alt="img" />
+      <img class="partners__img" src="/img/partners-7.webp" alt="img" />
+      <img class="partners__img" src="/img/partners-8.webp" alt="img" />
+      <img class="partners__img" src="/img/partners-9.webp" alt="img" />
+      <img class="partners__img" src="/img/partners-10.webp" alt="img" />
     </Vue3Marquee>
   </section>
 </template>

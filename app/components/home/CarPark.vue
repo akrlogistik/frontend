@@ -5,15 +5,15 @@
       <h3 class="CarPark__subTitle">Широкая партнерская сеть</h3>
       <div class="CarPark__wrapper">
         <div class="CarPark__item">
-          <img class="CarPark__img" src="/img/car-1.jpg" alt="img" />
+          <img class="CarPark__img" src="/img/car-1.webp" alt="img" />
           <p class="CarPark__description">Негабаритные перевозки</p>
         </div>
         <div class="CarPark__item">
-          <img class="CarPark__img" src="/img/car-2.jpg" alt="img" />
+          <img class="CarPark__img" src="/img/car-2.webp" alt="img" />
           <p class="CarPark__description">Междгородние перевозки</p>
         </div>
         <div class="CarPark__item">
-          <img class="CarPark__img" src="/img/car-3.jpg" alt="img" />
+          <img class="CarPark__img" src="/img/car-3.webp" alt="img" />
           <p class="CarPark__description">Сборный груз</p>
         </div>
       </div>

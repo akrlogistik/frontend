@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="geography__title">Обширная география перевозок</h2>
       <div class="geography__wrapper">
-        <img src="/img/hpme-geography.png" class="geography__img" alt="img" />
+        <img src="/img/hpme-geography.webp" class="geography__img" alt="img" />
       </div>
     </div>
   </section>
