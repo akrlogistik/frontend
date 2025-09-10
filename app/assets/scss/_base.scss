@@ -1,0 +1,219 @@
+body {
+	position: relative;
+	font-family: 'Helvetica','Arial', sans-serif;
+	background-color: #fff;
+}
+
+/* Кастомизация скроллбара */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #a1a1a1;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #41529E;
+	border-radius: 10px;
+	border: 2px solid #a1a1a1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #C3C8F9;
+}
+
+::-webkit-scrollbar-corner {
+	background: #a1a1a1;
+}
+
+/* Для Firefox */
+html {
+	scrollbar-width: thin;
+	scrollbar-color: #41529E #f4f4f4;
+}
+:root {
+	--p-select-border-radius: 15px;
+}
+* {
+	border: 1px #a30202;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1444px;
+	width: 100%;
+	padding: 0 50px;
+
+	@media screen and (max-width: 1024px) {
+		padding: 0 40px;
+	}
+
+	@media screen and (max-width: 480px) {
+		padding: 0 15px;
+	}
+}
+.p-select-list-container {
+	max-height: 22rem !important;
+}
+.btn-reset {
+	border: none;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.home {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+table {
+	border-spacing: 0;
+}
+// .section__blogs {
+// 	max-width: 1470px;
+// 	background-color: var(--c-dark-bg);
+// 	padding: 100px 80px 0;
+// 	width: 100%;
+// 	display: flex;
+// 	row-gap: 40px;
+// 	flex-direction: column;
+
+// 	@media screen and (max-width: 1200px) {
+// 		padding: 80px 40px 0;
+// 	}
+
+// 	@media screen and (max-width: 640px) {
+// 		padding: 60px 20px 0;
+// 	}
+// }
+// .title {
+// 	color:  #181818;
+// 	text-align: center;
+// 	font-family: Helvetica;
+// 	font-size: 32px;
+// 	font-style: normal;
+// 	font-weight: 700;
+// 	line-height: 40px; 
+// }
+
+// .section {
+// 	padding-top: 30px;
+// 	padding-bottom: 30px;
+// 	min-height: 60vh;
+// }
+
+// .service__wrapper {
+// 	padding: 100px 80px 0;
+// 	min-height: 738px;
+// 	background-position: center;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+
+// 	@media screen and (max-width: 1200px) {
+// 		padding: 80px 40px 0;
+// 	}
+
+// 	@media screen and (max-width: 640px) {
+// 		padding: 80px 20px 0;
+// 	}
+
+// 	@media screen and (max-width: 480px) {
+// 		padding: 60px 10px 0;
+// 	}
+// }
+
+.breadcrumbs {
+  padding-bottom: 50px;
+}
+
+.breadcrumbs-link {
+  cursor: pointer;
+  text-decoration: none;
+
+  color: #939393;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+// .p-select-overlay {
+// 	background: #f8f9fa !important;
+// 	border-radius: 8px !important;
+// 	border: 1px solid #e2e8f0 !important;
+// }
+
+// .p-select-option {
+// 	color: #181818 !important;
+// 	background: #ffffff !important;
+// }
+// .p-select-option-selected {
+// 	background: #ffffff !important;
+// }
+// .p-select-option-label {
+// 	color: #181818 !important;
+// 	font-size: 14px !important;
+// 	font-weight: 400 !important;
+// 	line-height: 20px !important;
+// }
+// .p-focus {
+// 	border-color: #667eea !important;
+// 	box-shadow: #667eea !important;
+// 	background: none !important;
+// }
+.p-inputtext {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.p-select {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.p-checkbox-input {
+	background-color: #fff;
+}
+
+.p-inputtext:disabled {
+	opacity: 0.7;
+}
+
+.p-select.p-disabled {
+	opacity: 0.7;
+}
+// .wrapper {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	gap: 20px;
+// 	padding-right: 0;
+// }
+// .service {
+// 	padding: 0;
+
+// 	&__content {
+// 		padding: 80px;
+
+// 		@media screen and (max-width: 1200px) {
+// 			padding: 40px;
+// 		}
+
+// 		@media screen and (max-width: 640px) {
+// 			padding: 20px;
+// 		}
+// 	}
+// }
+
+
