@@ -1,5 +1,5 @@
 <template>
-  <section class="partners">
+  <section class="partners" id="partners">
     <div class="container">
       <h2 class="partners__title">Наши заказчики</h2>
     </div>
@@ -22,7 +22,7 @@
 
 <style lang="scss" scoped>
 .partners {
-  padding: 0 0 80px 0;
+  padding: 80px 0 80px 0;
   background: #f8fafc;
   // position: relative;
   // overflow: hidden;
@@ -38,7 +38,7 @@
   //   animation: grain 25s linear infinite;
   // }
   @media screen and (max-width: 1204px) {
-    padding: 0 0 40px 0;
+    padding: 40px 0 40px 0;
   }
   &__title {
     margin-bottom: 50px;

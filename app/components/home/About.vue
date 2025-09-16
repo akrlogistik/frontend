@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h2 class="about__title">О нас</h2>
       <div class="about__content">
@@ -97,7 +97,7 @@
 
 <style lang="scss" scoped>
 .about {
-  padding: 0 0 80px 0;
+  padding: 80px 0 80px 0;
   background: #122e47;
   // background: linear-gradient(
   //   135deg,
@@ -117,7 +117,7 @@
   //   animation: grain 25s linear infinite;
   // }
   @media screen and (max-width: 1204px) {
-    padding: 0 0 40px 0;
+    padding: 40px 0 40px 0;
   }
   &__title {
     margin-bottom: 40px;

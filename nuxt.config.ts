@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@': '../app',
     '~': '../'
   },
-  modules: ['@primevue/nuxt-module', ['nuxt-mail', {
+  modules: ['@primevue/nuxt-module','vue-yandex-maps/nuxt', ['nuxt-mail', {
     message: {
       to: 'ceo@akrlog.ru',
     },
@@ -34,5 +34,8 @@ export default defineNuxtConfig({
           preset: Aura
       }
     }
+  },
+  yandexMaps: {
+    apikey: '945f01a7-a58e-47ff-8c0a-cda2f3d720c0',
   },
 })

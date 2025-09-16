@@ -1,6 +1,11 @@
 <template>
   <footer class="footer">
     <div class="container">
+      <div class="maps__component">
+        <ClientOnly>
+          <CommonMapComponent />
+        </ClientOnly>
+      </div>
       <div class="footer__wrapper">
         <div class="footer__links">
           <img src="/img/logo.webp" class="footer__logo" alt="logo" />
@@ -85,6 +90,17 @@
     font-weight: 400;
     font-family: 'Onest';
     color: #122e47;
+  }
+}
+.maps__component {
+  margin-bottom: 40px;
+  width: 100%;
+  min-height: 350px;
+  border-radius: 25px;
+  border: 1px solid #8f8f8f;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    min-height: 250px;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero" id="hero">
     <Header />
     <div class="container" style="position: relative">
       <div class="hero__content">
@@ -7,81 +7,61 @@
           <p class="hero__description">
             Грузоперевозки по России и СНГ для юридических лиц под ключ
           </p>
-          <PButton @click="scrollToFeedbook">Рассчитать стоимость</PButton>
-          <div class="hero__wrapper">
-            <ul class="list-reset hero__list">
-              <div class="hero__item-wrapper">
-                <img src="/img/arr.png" class="hero__arr" alt="arr" />
-                <li class="hero__item">7 лет в грузоперевозках</li>
-              </div>
-              <div class="hero__item-wrapper">
-                <img src="/img/arr.png" class="hero__arr" alt="arr" />
-                <li class="hero__item">Подадим машину в течение 3 часов</li>
-              </div>
-              <div class="hero__item-wrapper">
-                <img src="/img/arr.png" class="hero__arr" alt="arr" />
-                <li class="hero__item">Личный менеджер 24/7</li>
-              </div>
-              <div class="hero__item-wrapper">
-                <img src="/img/arr.png" class="hero__arr" alt="arr" />
-                <li class="hero__item">
-                  Доставим сборный груз без перегрузкина сторонних складах
-                </li>
-              </div>
-              <div class="hero__item-wrapper">
-                <img src="/img/arr.png" class="hero__arr" alt="arr" />
-                <li class="hero__item">Оформим документы за 40 минут</li>
-              </div>
-              <div class="hero__item-wrapper">
-                <img src="/img/arr.png" class="hero__arr" alt="arr" />
-                <li class="hero__item">Работает с НДС и без НДС</li>
-              </div>
-            </ul>
-            <p class="hero__description2">
-              <span class="hero__percentage">90%</span>
-              <span class="hero__text-block">
-                <span class="hero__text-line">Заказчиков</span>
-                <span class="hero__text-line">обращаются к нам повторно</span>
-              </span>
-            </p>
-          </div>
+          <PButton @click.prevent="scrollToFeedbook('feedbook')"
+            >Рассчитать стоимость</PButton
+          >
+          <ul class="list-reset hero__list">
+            <div class="hero__item-wrapper">
+              <img src="/img/arr.png" class="hero__arr" alt="arr" />
+              <li class="hero__item">7 лет в грузоперевозках</li>
+            </div>
+            <div class="hero__item-wrapper">
+              <img src="/img/arr.png" class="hero__arr" alt="arr" />
+              <li class="hero__item">Подадим машину в течение 3 часов</li>
+            </div>
+            <div class="hero__item-wrapper">
+              <img src="/img/arr.png" class="hero__arr" alt="arr" />
+              <li class="hero__item">Личный менеджер 24/7</li>
+            </div>
+            <div class="hero__item-wrapper">
+              <img src="/img/arr.png" class="hero__arr" alt="arr" />
+              <li class="hero__item">
+                Доставим сборный груз без перегрузкина сторонних складах
+              </li>
+            </div>
+            <div class="hero__item-wrapper">
+              <img src="/img/arr.png" class="hero__arr" alt="arr" />
+              <li class="hero__item">Оформим документы за 40 минут</li>
+            </div>
+            <div class="hero__item-wrapper">
+              <img src="/img/arr.png" class="hero__arr" alt="arr" />
+              <li class="hero__item">Работает с НДС и без НДС</li>
+            </div>
+          </ul>
+          <p class="hero__description2">
+            <span class="hero__percentage">90%</span>
+            <span class="hero__text-block">
+              <span class="hero__text-line">Заказчиков</span>
+              <span class="hero__text-line">обращаются к нам повторно</span>
+            </span>
+          </p>
         </div>
-        <!-- <img src="/img/home-hero.webp" class="hero__img" alt="img" /> -->
       </div>
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-const scrollToFeedbook = () => {
-  const feedbook = document.getElementById('feedbook')
-  if (feedbook) {
-    const getHeaderHeight = () => {
-      if (window.innerWidth <= 850) {
-        return 0
-      } else if (window.innerWidth <= 1204) {
-        return 78
-      } else {
-        return 79
-      }
-    }
-
-    const headerHeight = getHeaderHeight()
-    const elementPosition = feedbook.offsetTop
-    const offsetPosition = elementPosition - headerHeight
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth',
-    })
-  }
+const scrollToFeedbook = (sectionId: string) => {
+  const element = document.getElementById(sectionId)
+  element?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 </script>
 
 <style lang="scss" scoped>
 .hero {
   position: relative;
-  padding: 150px 0 20px 0;
+  padding: 70px 0 20px 0;
   overflow: hidden;
   background-image: url('/img/hero.webp');
   background-size: cover;
@@ -103,10 +83,18 @@ const scrollToFeedbook = () => {
     background: rgba(18, 46, 71, 0.6);
     z-index: 1;
   }
-
+  @media screen and (max-width: 1364px) {
+    padding: 200px 0 20px 0;
+    height: 900px;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 190px 0 20px 0;
+    height: 750px;
+  }
   @media screen and (max-width: 850px) {
     display: block;
-    padding: 0px 0 50px 0;
+    padding: 0px 0 20px 0;
+    height: 710px;
   }
   &__arr {
     width: 25px;
@@ -195,6 +183,7 @@ const scrollToFeedbook = () => {
     }
   }
   &__list {
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -256,13 +245,12 @@ const scrollToFeedbook = () => {
   }
 }
 :deep(.p-button) {
-  margin-bottom: 50px;
-  @media screen and (max-width: 1200px) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 7px 60px;
   @media screen and (max-width: 850px) {
-    font-size: 14px;
-    padding: 5px 10px;
+    font-size: 16px;
+    padding: 7px 40px;
   }
 }
 </style>

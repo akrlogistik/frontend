@@ -1,5 +1,5 @@
 <template>
-  <section class="founders">
+  <section class="founders" id="founders">
     <div class="container">
       <h2 class="founders__title">Руководство компании</h2>
       <div class="founders__wrapper">
@@ -30,7 +30,12 @@
           </div>
           <div class="founders__info">
             <h3 class="founders__name">Кадиев Руслан Кадиевич</h3>
-            <p class="founders__description">Исполнительный директор</p>
+            <p class="founders__description">
+              Руководитель службы безопасности
+            </p>
+            <a href="mailto:ceo@akrlog.ru" class="founders__description"
+              >sb@akrlog.ru</a
+            >
           </div>
         </div>
       </div>
@@ -42,7 +47,7 @@
 
 <style lang="scss" scoped>
 .founders {
-  padding: 80px 0;
+  padding: 80px 0 0 0;
   background: #f8fafc;
   // position: relative;
   // overflow: hidden;
@@ -58,7 +63,7 @@
   //   animation: grain 25s linear infinite;
   // }
   @media screen and (max-width: 1204px) {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
   &__title {
     margin-bottom: 50px;

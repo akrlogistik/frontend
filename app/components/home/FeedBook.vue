@@ -64,7 +64,7 @@ const submitForm = async () => {
 
 <style lang="scss" scoped>
 .feedbook {
-  padding: 0 0 80px 0;
+  padding: 80px 0 0px 0;
   background: #f8fafc;
   // position: relative;
   // overflow: hidden;
@@ -80,7 +80,7 @@ const submitForm = async () => {
   //   animation: grain 25s linear infinite;
   // }
   @media screen and (max-width: 1204px) {
-    padding: 0 0 40px 0;
+    padding: 40px 0 0 0;
   }
   &__wrapper {
     display: grid;

@@ -1,5 +1,5 @@
 <template>
-  <section class="geography">
+  <section class="geography" id="geography">
     <div class="container">
       <h2 class="geography__title">Обширная география перевозок</h2>
       <div class="geography__wrapper">

@@ -1,9 +1,12 @@
 <template>
-  <section class="CarPark">
+  <section class="CarPark" id="carpark">
     <div class="container">
       <h2 class="CarPark__title">Собственный автопарк</h2>
       <h3 class="CarPark__subTitle">Широкая партнерская сеть</h3>
-      <p class="CarPark__subTitle2">Более 100 единиц техники</p>
+      <p class="CarPark__subTitle2">
+        Более 100 единиц техники разного класса для решения любых задач по всей
+        России. Ваш груз всегда будет доставлен вовремя!
+      </p>
       <div class="CarPark__wrapper">
         <div class="CarPark__item">
           <img class="CarPark__img" src="/img/car-1.webp" alt="img" />
@@ -26,7 +29,7 @@
 
 <style lang="scss" scoped>
 .CarPark {
-  padding: 80px 0;
+  padding: 80px 0 0 0;
   background: #122e47;
   // position: relative;
   // overflow: hidden;
@@ -42,7 +45,7 @@
   //   animation: grain 25s linear infinite;
   // }
   @media screen and (max-width: 1204px) {
-    padding: 40px 0;
+    padding: 40px 0 0 0;
   }
   &__wrapper {
     display: grid;
@@ -61,7 +64,7 @@
     }
   }
   &__title {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 40px;
     font-weight: 700;
     font-family: 'Onest';
@@ -77,6 +80,7 @@
     }
   }
   &__subTitle {
+    margin-bottom: 10px;
     font-size: 30px;
     font-weight: 400;
     font-family: 'Onest';
@@ -93,7 +97,7 @@
   }
   &__subTitle2 {
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
     font-family: 'Onest';
     color: #ffffff;
