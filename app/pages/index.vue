@@ -2,11 +2,12 @@
   <div>
     <HomeHero />
     <HomeCarPark />
-    <HomePartners />
-    <HomeGeography />
-    <HomeFeedBook />
     <HomeAbout />
     <HomeFounders />
+    <HomeFeedBook />
+    <HomePartners />
+
+    <HomeGeography />
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <section class="partners">
     <div class="container">
-      <h2 class="partners__title">Наши парнтеры</h2>
+      <h2 class="partners__title">Наши заказчики</h2>
     </div>
     <Vue3Marquee class="partners__items">
       <img class="partners__img" src="/img/partners-1.webp" alt="img" />
@@ -22,23 +22,23 @@
 
 <style lang="scss" scoped>
 .partners {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-  position: relative;
-  overflow: hidden;
+  padding: 0 0 80px 0;
+  background: #f8fafc;
+  // position: relative;
+  // overflow: hidden;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23122e47" opacity="0.05"/><circle cx="75" cy="75" r="1" fill="%23054263" opacity="0.05"/><circle cx="50" cy="10" r="0.5" fill="%23122e47" opacity="0.03"/><circle cx="10" cy="60" r="0.5" fill="%23054263" opacity="0.03"/><circle cx="90" cy="40" r="0.5" fill="%23122e47" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    animation: grain 25s linear infinite;
-  }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23122e47" opacity="0.05"/><circle cx="75" cy="75" r="1" fill="%23054263" opacity="0.05"/><circle cx="50" cy="10" r="0.5" fill="%23122e47" opacity="0.03"/><circle cx="10" cy="60" r="0.5" fill="%23054263" opacity="0.03"/><circle cx="90" cy="40" r="0.5" fill="%23122e47" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  //   animation: grain 25s linear infinite;
+  // }
   @media screen and (max-width: 1204px) {
-    padding: 40px 0;
+    padding: 0 0 40px 0;
   }
   &__title {
     margin-bottom: 50px;

@@ -10,6 +10,14 @@
             >info@akrlog.ru</a
           >
         </div>
+        <div class="footer__rek">
+          <span class="footer__rek-title">ООО "АКР ГРУПП"</span>
+          <span class="footer__rek-title">ИНН: 5642024269</span>
+          <span class="footer__rek-title">КПП: 564201001</span>
+          <span class="footer__rek-title"
+            >Адрес: Москва, Партийный пер., 1К57С3 (бц «М-стиль офис»)</span
+          >
+        </div>
         <img src="/img/qr.webp" class="footer__qr" alt="qr" />
       </div>
     </div>
@@ -61,11 +69,22 @@
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    @media screen and (max-width: 619px) {
+    @media screen and (max-width: 1154px) {
       gap: 20px;
       flex-direction: column;
       align-items: flex-start;
     }
+  }
+  &__rek {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__rek-title {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Onest';
+    color: #122e47;
   }
 }
 </style>
