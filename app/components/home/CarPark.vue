@@ -10,11 +10,11 @@
           <p class="CarPark__description">Негабаритные перевозки</p>
         </div>
         <div class="CarPark__item">
-          <img class="CarPark__img" src="/img/car-2.png" alt="img" />
+          <img class="CarPark__img" src="/img/car-2.webp" alt="img" />
           <p class="CarPark__description">Междугородние перевозки</p>
         </div>
         <div class="CarPark__item">
-          <img class="CarPark__img" src="/img/car-3.png" alt="img" />
+          <img class="CarPark__img" src="/img/car-3.webp" alt="img" />
           <p class="CarPark__description">Доставка сборного груза</p>
         </div>
       </div>

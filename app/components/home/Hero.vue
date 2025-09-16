@@ -80,9 +80,10 @@ const scrollToFeedbook = () => {
 
 <style lang="scss" scoped>
 .hero {
+  position: relative;
   padding: 150px 0 20px 0;
   overflow: hidden;
-  background-image: url('/img/hero.jpg');
+  background-image: url('/img/hero.webp');
   background-size: cover;
   background-position: center;
   height: 100%;
