@@ -26,7 +26,7 @@
             <div class="hero__item-wrapper">
               <img src="/img/arr.png" class="hero__arr" alt="arr" />
               <li class="hero__item">
-                Доставим сборный груз без перегрузкина сторонних складах
+                Доставим сборный груз без перегрузки на сторонних складах
               </li>
             </div>
             <div class="hero__item-wrapper">
@@ -54,7 +54,15 @@
 <script lang="ts" setup>
 const scrollToFeedbook = (sectionId: string) => {
   const element = document.getElementById(sectionId)
-  element?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  if (element) {
+    const header = document.querySelector('.header') as HTMLElement
+    const headerHeight = header ? header.offsetHeight : 100
+    const elementPosition = element.offsetTop - headerHeight
+    window.scrollTo({
+      top: elementPosition,
+      behavior: 'smooth',
+    })
+  }
 }
 </script>
 
@@ -84,17 +92,16 @@ const scrollToFeedbook = (sectionId: string) => {
     z-index: 1;
   }
   @media screen and (max-width: 1364px) {
-    padding: 200px 0 20px 0;
-    height: 900px;
+    padding: 120px 0 20px 0;
+    height: 100vh;
   }
   @media screen and (max-width: 1200px) {
     padding: 190px 0 20px 0;
     height: 750px;
   }
   @media screen and (max-width: 850px) {
-    display: block;
-    padding: 0px 0 20px 0;
-    height: 710px;
+    padding: 150px 0 20px 0;
+    height: 610px;
   }
   &__arr {
     width: 25px;
@@ -248,6 +255,8 @@ const scrollToFeedbook = (sectionId: string) => {
   margin-bottom: 20px;
   font-size: 18px;
   padding: 7px 60px;
+  background-color: rgb(244, 163, 1) !important;
+  border-color: rgb(244, 163, 1) !important;
   @media screen and (max-width: 850px) {
     font-size: 16px;
     padding: 7px 40px;

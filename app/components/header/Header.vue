@@ -68,7 +68,15 @@ const isFixed = ref(false)
 
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId)
-  element?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  if (element) {
+    const header = document.querySelector('.header') as HTMLElement
+    const headerHeight = header ? header.offsetHeight : 100
+    const elementPosition = element.offsetTop - headerHeight
+    window.scrollTo({
+      top: elementPosition,
+      behavior: 'smooth',
+    })
+  }
 }
 
 onMounted(() => {
@@ -90,10 +98,10 @@ onMounted(() => {
   padding: 15px 0;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.24), 2px 4px 8px rgba(0, 0, 0, 0.04);
 
-  @media screen and (max-width: 850px) {
-    position: relative;
-    margin-bottom: 40px;
-  }
+  // @media screen and (max-width: 850px) {
+  //   position: relative;
+  //   margin-bottom: 40px;
+  // }
   &__fixed {
     padding: 5px 0;
     background: rgba(255, 255, 255, 0.98);
@@ -113,7 +121,7 @@ onMounted(() => {
     gap: 40px;
     transition: all 0.3s ease;
     @media screen and (max-width: 1364px) {
-      gap: 15px;
+      gap: 10px;
       flex-direction: column;
     }
   }
@@ -164,11 +172,12 @@ onMounted(() => {
     display: flex;
     gap: 18px;
     @media screen and (max-width: 659px) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      // gap: 10px;
+      // align-items: center;
+      // justify-items: center;
       gap: 10px;
-      align-items: center;
-      justify-items: center;
     }
   }
   &__nav-item {
@@ -191,7 +200,7 @@ onMounted(() => {
       color: #1c4b73;
     }
     @media screen and (max-width: 659px) {
-      font-size: 12px;
+      font-size: 9px;
     }
   }
 }
