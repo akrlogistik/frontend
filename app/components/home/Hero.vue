@@ -252,11 +252,12 @@ const scrollToFeedbook = (sectionId: string) => {
   }
 }
 :deep(.p-button) {
+  color: #122e47 !important;
   margin-bottom: 20px;
   font-size: 18px;
   padding: 7px 60px;
-  background-color: rgb(244, 163, 1) !important;
-  border-color: rgb(244, 163, 1) !important;
+  background-color: rgb(255, 255, 255) !important;
+  border-color: rgb(255, 255, 255) !important;
   @media screen and (max-width: 850px) {
     font-size: 16px;
     padding: 7px 40px;

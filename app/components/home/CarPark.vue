@@ -9,7 +9,7 @@
       </p>
       <div class="CarPark__wrapper">
         <div class="CarPark__item">
-          <img class="CarPark__img" src="/img/car-1.webp" alt="img" />
+          <img class="CarPark__img" src="/img/car-1.jpg" alt="img" />
           <p class="CarPark__description">Негабаритные перевозки</p>
         </div>
         <div class="CarPark__item">

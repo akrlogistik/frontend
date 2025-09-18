@@ -6,7 +6,7 @@
         <div class="founders__item founders__item--left">
           <div class="founders__photo">
             <img
-              src="/img/founders.webp"
+              src="/img/founders.jpg"
               alt="Основатель 1"
               class="founders__image"
             />
@@ -23,7 +23,7 @@
         <div class="founders__item founders__item--right">
           <div class="founders__photo">
             <img
-              src="/img/founders.webp"
+              src="/img/founders.jpg"
               alt="Основатель 2"
               class="founders__image"
             />
