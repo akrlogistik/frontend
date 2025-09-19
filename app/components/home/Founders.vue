@@ -23,7 +23,7 @@
         <div class="founders__item founders__item--right">
           <div class="founders__photo">
             <img
-              src="/img/founders.jpg"
+              src="/img/founders-1.jpg"
               alt="Основатель 2"
               class="founders__image"
             />
